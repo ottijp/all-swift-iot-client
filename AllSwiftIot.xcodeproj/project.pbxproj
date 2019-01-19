@@ -12,6 +12,10 @@
 		241C0BAB21F2EFBD00222788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241C0BA921F2EFBD00222788 /* Main.storyboard */; };
 		241C0BAD21F2EFBF00222788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241C0BAC21F2EFBF00222788 /* Assets.xcassets */; };
 		241C0BB021F2EFBF00222788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241C0BAE21F2EFBF00222788 /* LaunchScreen.storyboard */; };
+		241C0BB821F2F83D00222788 /* DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C0BB721F2F83D00222788 /* DeviceStatus.swift */; };
+		241C0BBA21F302D400222788 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C0BB921F302D400222788 /* APIClient.swift */; };
+		241C0BBC21F302E700222788 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C0BBB21F302E700222788 /* Result.swift */; };
+		249A4E441F79B011F85326C3 /* Pods_AllSwiftIot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D5E096F3CD247A02F43AFE /* Pods_AllSwiftIot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		241C0BAC21F2EFBF00222788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		241C0BAF21F2EFBF00222788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		241C0BB121F2EFBF00222788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		241C0BB721F2F83D00222788 /* DeviceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatus.swift; sourceTree = "<group>"; };
+		241C0BB921F302D400222788 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		241C0BBB21F302E700222788 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		46B0092F56A7321273238FFF /* Pods-AllSwiftIot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllSwiftIot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AllSwiftIot/Pods-AllSwiftIot.debug.xcconfig"; sourceTree = "<group>"; };
+		96D5E096F3CD247A02F43AFE /* Pods_AllSwiftIot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllSwiftIot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC9E69A295393C0265EC4B7 /* Pods-AllSwiftIot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllSwiftIot.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllSwiftIot/Pods-AllSwiftIot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249A4E441F79B011F85326C3 /* Pods_AllSwiftIot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				241C0BA421F2EFBD00222788 /* AllSwiftIot */,
 				241C0BA321F2EFBD00222788 /* Products */,
+				31DDF13EA7170E51F6E5DBE3 /* Pods */,
+				40424D7BC55D2E9F42AC048F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +69,32 @@
 			children = (
 				241C0BA521F2EFBD00222788 /* AppDelegate.swift */,
 				241C0BA721F2EFBD00222788 /* ViewController.swift */,
+				241C0BB921F302D400222788 /* APIClient.swift */,
+				241C0BBB21F302E700222788 /* Result.swift */,
+				241C0BB721F2F83D00222788 /* DeviceStatus.swift */,
 				241C0BA921F2EFBD00222788 /* Main.storyboard */,
 				241C0BAC21F2EFBF00222788 /* Assets.xcassets */,
 				241C0BAE21F2EFBF00222788 /* LaunchScreen.storyboard */,
 				241C0BB121F2EFBF00222788 /* Info.plist */,
 			);
 			path = AllSwiftIot;
+			sourceTree = "<group>";
+		};
+		31DDF13EA7170E51F6E5DBE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46B0092F56A7321273238FFF /* Pods-AllSwiftIot.debug.xcconfig */,
+				FAC9E69A295393C0265EC4B7 /* Pods-AllSwiftIot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40424D7BC55D2E9F42AC048F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96D5E096F3CD247A02F43AFE /* Pods_AllSwiftIot.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 241C0BB421F2EFBF00222788 /* Build configuration list for PBXNativeTarget "AllSwiftIot" */;
 			buildPhases = (
+				57BA5496F93377261FF406AE /* [CP] Check Pods Manifest.lock */,
 				241C0B9E21F2EFBD00222788 /* Sources */,
 				241C0B9F21F2EFBD00222788 /* Frameworks */,
 				241C0BA021F2EFBD00222788 /* Resources */,
+				383104078E2795FC4D01BE0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +165,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		383104078E2795FC4D01BE0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AllSwiftIot/Pods-AllSwiftIot-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllSwiftIot/Pods-AllSwiftIot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57BA5496F93377261FF406AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AllSwiftIot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		241C0B9E21F2EFBD00222788 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				241C0BA821F2EFBD00222788 /* ViewController.swift in Sources */,
+				241C0BBC21F302E700222788 /* Result.swift in Sources */,
+				241C0BB821F2F83D00222788 /* DeviceStatus.swift in Sources */,
 				241C0BA621F2EFBD00222788 /* AppDelegate.swift in Sources */,
+				241C0BBA21F302D400222788 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +365,7 @@
 		};
 		241C0BB521F2EFBF00222788 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B0092F56A7321273238FFF /* Pods-AllSwiftIot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +384,7 @@
 		};
 		241C0BB621F2EFBF00222788 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAC9E69A295393C0265EC4B7 /* Pods-AllSwiftIot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
